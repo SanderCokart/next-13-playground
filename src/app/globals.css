@@ -1,8 +1,15 @@
+@import "react-loading-skeleton/dist/skeleton.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+    :root {
+        --loading-base: theme("colors.slate.900");
+        --loading-highlight: theme("colors.slate.500");
+    }
+
     body {
         @apply bg-slate-900 text-white;
     }
@@ -11,4 +18,33 @@
     textarea {
         @apply text-black px-2 py-1 rounded;
     }
+
+    h1 {
+        @apply text-4xl font-bold;
+    }
+
+    h2 {
+        @apply text-3xl font-bold;
+    }
+
+    h3 {
+        @apply text-2xl font-bold;
+    }
+
+    h4 {
+        @apply text-xl font-bold;
+    }
+
+    h5 {
+        @apply text-lg font-bold;
+    }
+
+    h6 {
+        @apply text-base font-bold;
+    }
+
+    main, section, article {
+        @apply my-4;
+    }
 }
+
